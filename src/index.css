@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 100px 80px 80px;
+  max-width: 800px;
+}
+
+h1 {
+  @apply text-4xl;
+  @apply font-bold;
+}
+
+h2 {
+  @apply text-xl;
+  @apply font-bold;
+  @apply mt-20;
+  border-bottom: 1px solid #000;
+}
+
+h3 {
+  @apply text-2xl;
+  @apply font-bold;
+  padding-top: 40px;
+}
+
+h4 {
+  @apply text-xl;
+  @apply font-bold;
+  padding-top: 10px;
+}
+
+ul {
+  @apply list-inside;
+  margin-top: 10px;
+}
+
+li {
+  @apply ml-6;
+  text-indent: -9px;
+}
+li::before {
+  content: '';
+  display: inline-block;
+  margin: 0 6px 4px 0;
+  width: 4px;
+  height: 4px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #7e8082;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+a {
+  @apply text-blue-500;
+}
+
+.contact {
+  @apply text-gray-700;
+  @apply text-sm;
+  margin-top: 20px;
+}
+
+.intro {
+  @apply text-gray-700;
+  @apply text-base;
+  margin-top: 20px;
+}
+
+.projects {
+  padding-left: 40px;
+}
+
+.period {
+  @apply text-gray-500;
+  @apply text-sm;
+  line-height: 28px;
+}
+
+.description {
+  @apply text-gray-700;
+  @apply text-sm;
+}
