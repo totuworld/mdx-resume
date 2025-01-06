@@ -52,6 +52,12 @@ li::before {
   background-color: #7e8082;
 }
 
+@media print {
+  li {
+    list-style-type: "·";
+  }
+}
+
 hr {
   margin: 40px 0;
 }
@@ -85,4 +91,8 @@ a {
 .description {
   @apply text-gray-700;
   @apply text-sm;
+}
+
+.profile > p > img {
+  width: 300px;
 }
